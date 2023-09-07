@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+/* Styles for phones (up to 767px) */
+@media (max-width: 767px) {
+  .MuiAppBar-root {
+    padding: 8px;
+  }
+  .footer-text {
+    font-size: 16px !important;
+  }
+  .MuiTypography-body1 {
+    font-size: 10px !important;
+  }
+
+  .MuiIconButton-root {
+    font-size: 2.5rem !important;
+  }
+}
+
+/* Styles for tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .MuiTypography-body1 {
+    font-size: 20px !important;
+  }
+
+  .MuiIconButton-root {
+    font-size: 3rem !important; /* Increase button size for tablets */
+  }
+  .footer-text {
+    font-size: 25px !important; /* Increase font size for mobile */
+  }
+}
+
+/* Styles for laptops (1024px and up) */
+@media (min-width: 1024px) {
+  /* Add laptop/desktop-specific styles here */
+}

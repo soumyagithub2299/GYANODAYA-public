@@ -1,0 +1,93 @@
+.all-products-container {
+  background: linear-gradient(to bottom, #f9fbe7, #d2ebfb);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.animated-text {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styles for tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .MuiTypography-root {
+    font-size: 1.5rem;
+  }
+
+  .MuiGrid-item {
+    padding: 15px;
+  }
+}
+
+/* Styles for desktop and larger screens (1024px and up) */
+@media (min-width: 1024px) {
+  .MuiGrid-item {
+    padding: 20px;
+  }
+}
+
+/* Styles for phones (up to 767px) */
+@media (max-width: 767px) {
+  .all-products-container {
+    justify-content: center;
+  }
+
+  .MuiTypography-h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .MuiButton-root.filter-button {
+    font-size: 1rem;
+    padding: 8px 20px;
+    margin-top: 10px;
+    width: auto;
+  }
+
+  .MuiInputBase-root {
+    width: 70%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .MuiInputAdornment-positionEnd {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .MuiButton-root.filter-button,
+  .MuiButton-root.cart-button,
+  .MuiButton-root.wishlist-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .MuiButton-root.cart-button,
+  .MuiButton-root.wishlist-button {
+    font-size: 15px;
+    padding: 8px 20px;
+    margin-top: 10px;
+    align-items: center;
+    width: 100%;
+  }
+}

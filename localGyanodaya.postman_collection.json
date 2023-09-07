@@ -1,0 +1,565 @@
+{
+	"info": {
+		"_postman_id": "4672f883-1316-41c6-9a2e-df6419c75146",
+		"name": "localGyanodaya",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26752614"
+	},
+	"item": [
+		{
+			"name": "http://localhost:7071/api/createUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Email\": \"resutiwari9109@gmail.com\",\r\n    \"Name\": \"Resu Tiwari\",\r\n    \"Password\": \"Resu@123\",\r\n    \"ConfirmPassword\": \"Resu@123\",\r\n    \"Gender\": \"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/createUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"createUser"
+					]
+				},
+				"description": "create User"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7071/api/sendEmailForOTP?Email=soumyatiwari7247@gmail.com",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/api/sendEmailForOTP?Email=soumyatiwari7247@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"sendEmailForOTP"
+					],
+					"query": [
+						{
+							"key": "Email",
+							"value": "soumyatiwari7247@gmail.com"
+						}
+					]
+				},
+				"description": "send Email for OTP"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:7071/api/createProducts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"Computer\",\r\n    \"Subject\": \"Computer\",\r\n    \"Price\": \"5 rs\",\r\n    \"Description\": \"here you will get all the notes of computers.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/createProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"createProducts"
+					]
+				},
+				"description": "createProducts"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7071/api/getSingleProduct?ID=86c9cd",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/api/getSingleProduct?ID=86c9cd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"getSingleProduct"
+					],
+					"query": [
+						{
+							"key": "ID",
+							"value": "86c9cd"
+						}
+					]
+				},
+				"description": "get a single Product"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7071/api/getAllProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/api/getAllProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"getAllProducts"
+					]
+				},
+				"description": "get all the ProdProducts "
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7071/api/updatePassword?Email=soumyatiwari7247@gmail.com",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Password\": \"Resu@123\",\r\n    \"ConfirmPassword\": \"Resu@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/updatePassword?Email=resutiwari9109@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"updatePassword"
+					],
+					"query": [
+						{
+							"key": "Email",
+							"value": "resutiwari9109@gmail.com"
+						}
+					]
+				},
+				"description": "user password updated"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7071/api/sendEmailForUpdatedPassword?Email=soumyatiwari7247@gmail.com",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/api/sendEmailForUpdatedPassword?Email=soumyatiwari7247@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"sendEmailForUpdatedPassword"
+					],
+					"query": [
+						{
+							"key": "Email",
+							"value": "soumyatiwari7247@gmail.com"
+						}
+					]
+				},
+				"description": "send Email for password update massage"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7071/api/createCart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ID\": \"86c9cd\",\r\n    \"Name\": \"Com\",\r\n    \"Subject\": \"Computer\",\r\n    \"Price\": \"50000 rs\"\r\n}   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/createCart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"createCart"
+					]
+				},
+				"description": "add to Cart"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7071/api/getCart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/api/getCart?Email=resutiwari9109@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"getCart"
+					],
+					"query": [
+						{
+							"key": "Email",
+							"value": "resutiwari9109@gmail.com"
+						}
+					]
+				},
+				"description": "get Cart"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7071/api/removeFromCart?ID=86c9cd",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/api/removeFromCart?ID=86c9cd&Email=resutiwari9109@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"removeFromCart"
+					],
+					"query": [
+						{
+							"key": "ID",
+							"value": "86c9cd"
+						},
+						{
+							"key": "Email",
+							"value": "resutiwari9109@gmail.com"
+						}
+					]
+				},
+				"description": "delete from Cart"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7071/api/createWishlist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ID\": \"ee\",\r\n    \"Name\": \"Com\",\r\n    \"Subject\": \"Computer\",\r\n    \"Price\": \"500000000000000000000000000000000 rs\",\r\n    \"Email\":\"resutiwari9109@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/createWishlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"createWishlist"
+					]
+				},
+				"description": "create Wishlist"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:7071/api/removeFromWishlist?ID=ee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/api/removeFromWishlist?ID=ee&Email=resutiwari9109@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"removeFromWishlist"
+					],
+					"query": [
+						{
+							"key": "ID",
+							"value": "ee"
+						},
+						{
+							"key": "Email",
+							"value": "resutiwari9109@gmail.com"
+						}
+					]
+				},
+				"description": "remove from Wishlist"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7071/api/getWishlist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/api/getWishlist?Email=resutiwari9109@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"getWishlist"
+					],
+					"query": [
+						{
+							"key": "Email",
+							"value": "resutiwari9109@gmail.com"
+						}
+					]
+				},
+				"description": "get Wishlist"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7071/api/getUser?Email=soumyatiwari7247@gmail.com&Password=123Soumya",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/api/getUser?Email=resutiwari9109@gmail.com&Password=Resu@123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"getUser"
+					],
+					"query": [
+						{
+							"key": "Email",
+							"value": "resutiwari9109@gmail.com"
+						},
+						{
+							"key": "Password",
+							"value": "Resu@123"
+						}
+					]
+				},
+				"description": "get User"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7071/api/varifyOTP?Email=soumyatiwari7247@gmail.com&OTP=70848",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/api/varifyOTP?Email=soumyatiwari7247@gmail.com&OTP=70848",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"varifyOTP"
+					],
+					"query": [
+						{
+							"key": "Email",
+							"value": "soumyatiwari7247@gmail.com"
+						},
+						{
+							"key": "OTP",
+							"value": "70848"
+						}
+					]
+				},
+				"description": "OTP varification"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7071/api/getQuery",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Query\": \"testinggggggggggg ......\",\r\n    \"Email\":\"resutiwari9109@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/createQuery",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"createQuery"
+					]
+				},
+				"description": "query question"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7071/api/sendEmailForNewAccount?Email=soumyatiwari7247@gmail.com&Name=Soumya Tiwari ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/api/sendEmailForNewAccount?Email=soumyatiwari7247@gmail.com&Name=Soumya Tiwari ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"sendEmailForNewAccount"
+					],
+					"query": [
+						{
+							"key": "Email",
+							"value": "soumyatiwari7247@gmail.com"
+						},
+						{
+							"key": "Name",
+							"value": "Soumya Tiwari "
+						}
+					]
+				},
+				"description": "mail send for new account"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:7071/api/userByID?ID=f13298",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/api/userByID?ID=58d9f6&Email=resutiwari9109@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"userByID"
+					],
+					"query": [
+						{
+							"key": "ID",
+							"value": "58d9f6"
+						},
+						{
+							"key": "Email",
+							"value": "resutiwari9109@gmail.com"
+						}
+					]
+				},
+				"description": "get user by ID"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7071/api/checkForUniqueUser?Email=rgevv@gmail.com",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7071/api/checkForUniqueUser?Email=resutiwari9109@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"checkForUniqueUser"
+					],
+					"query": [
+						{
+							"key": "Email",
+							"value": "resutiwari9109@gmail.com"
+						}
+					]
+				},
+				"description": "check email for unique user"
+			},
+			"response": []
+		}
+	]
+}

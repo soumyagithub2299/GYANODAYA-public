@@ -1,0 +1,99 @@
+.cart-container {
+  background: linear-gradient(to bottom, #f9fbe7, #d2ebfb);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 20px 20px;
+  background-size: 100% auto;
+}
+.empty-massage {
+  text-align: center;
+}
+.wishlist-icon {
+  position: fixed;
+  top: 110px;
+  right: 30px;
+  color: red;
+}
+.cart-heading {
+  color: blue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.cart-item-card {
+  width: calc(350px);
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+  min-height: 200px;
+  text-align: left;
+}
+.animated-text {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animated-text {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.MuiButton-root {
+  width: 100% !important;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buy-now-button {
+  width: 180px !important;
+  margin-top: 20px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for phones (up to 767px) */
+@media (max-width: 767px) {
+  .MuiButton-root {
+    font-size: 15px !important;
+    padding: 10px 20px !important;
+  }
+
+  .cart-heading {
+    font-size: 2rem;
+  }
+
+  .cart-item-card {
+    text-align: left;
+  }
+
+  /* No specific styles for the "Buy Now" button on phones */
+}
+
+/* Styles for tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* No specific styles for tablets, you can add them here if needed */
+}
+
+/* Styles for laptops (1024px and up) */
+@media (min-width: 1024px) {
+  /* No specific styles for laptops, you can add them here if needed */
+}

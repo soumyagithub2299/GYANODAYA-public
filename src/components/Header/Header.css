@@ -1,0 +1,61 @@
+.header-container {
+  background-color: #333;
+  padding: 0 20px;
+}
+
+.header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.active-button {
+  border-bottom: 2px solid yellow;
+}
+
+.button {
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.header-text {
+  font-size: 28px;
+  color: yellow;
+  cursor: default;
+  flex-grow: 1;
+}
+
+.toggle-button {
+  font-size: 50px;
+  padding: 20px;
+}
+
+/* Update styles for phones (up to 767px) */
+@media (max-width: 767px) {
+  .header-container {
+    padding: 0 10px;
+  }
+
+  .logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .button {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+}
+
+/* Update styles for tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-text {
+    font-size: 24px;
+  }
+}

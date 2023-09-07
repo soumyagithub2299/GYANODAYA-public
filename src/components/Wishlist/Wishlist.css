@@ -1,0 +1,68 @@
+.wishlist-container {
+  background: linear-gradient(to bottom, #f9fbe7, #d2ebfb);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.wishlist-heading {
+  color: blue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.wishlist-item-card {
+  width: calc(100% - 30px);
+  margin-right: 30px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+}
+.animated-text {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cart-icon {
+  position: fixed;
+  top: 110px;
+  right: 40px;
+  color: blue;
+}
+
+/* Styles for phones (up to 767px) */
+@media (max-width: 767px) {
+  .wishlist-heading {
+    font-size: 2rem;
+  }
+
+  .wishlist-item-card {
+    text-align: left;
+  }
+
+  /* No specific styles for the "Buy Now" button on phones */
+}
+
+/* Styles for tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* No specific styles for tablets, you can add them here if needed */
+}
+
+/* Styles for laptops (1024px and up) */
+@media (min-width: 1024px) {
+  /* No specific styles for laptops, you can add them here if needed */
+}

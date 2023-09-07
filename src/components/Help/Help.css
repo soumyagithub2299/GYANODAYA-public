@@ -1,0 +1,58 @@
+.help-container {
+  background: linear-gradient(to bottom, #f9fbe7, #d2ebfb);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.animated-text {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styles for phones (up to 767px) */
+@media (max-width: 767px) {
+  .help-container {
+    padding: 15px;
+  }
+
+  .MuiButton-root {
+    font-size: 14px;
+  }
+
+  .MuiTypography-root {
+    font-size: 18px;
+  }
+  .forgot-password-text {
+    font-size: 25px;
+  }
+
+  .MuiSnackbarContent-root {
+    width: 90%;
+  }
+
+  .MuiCard-root {
+    margin-bottom: 15px;
+  }
+}
+
+/* Styles for tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .MuiTypography-root {
+    font-size: 24px;
+  }
+}
+
+/* Styles for laptops and desktops (1024px and up) */
+@media (min-width: 1024px) {
+  /* Add laptop/desktop-specific styles here */
+}

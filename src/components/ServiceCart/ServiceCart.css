@@ -1,0 +1,56 @@
+
+.animated-card {
+  animation: fadeIn 1s ease-in-out; 
+  width: calc(100% - 30px);
+  margin: 0 auto 16px;
+  padding: 16px;
+  border-radius: 10px;
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Increase font size for larger screens */
+@media (min-width: 768px) {
+  .animated-card {
+    font-size: 18px;
+  }
+}
+
+/* Styles for phones (up to 767px) */
+@media (max-width: 767px) {
+  .animated-card {
+    font-size: 16px; 
+    margin-bottom: 8px;
+    padding: 12px; 
+  }
+}
+
+/* Styles for tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .animated-card {
+  
+    font-size: 17px; 
+    margin-bottom: 12px; 
+    padding: 14px; 
+  }
+}
+
+/* Styles for desktop (1024px and up) */
+@media (min-width: 1024px) {
+  .animated-card {
+
+    font-size: 20px;
+    margin-bottom: 20px; 
+    padding: 16px; 
+  }
+}

@@ -1,0 +1,53 @@
+.buynow-container {
+  background: linear-gradient(to bottom, #f9fbe7, #d2ebfb);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.animated-text {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styles for phones (up to 767px) */
+@media (max-width: 767px) {
+  .MuiTableCell-root {
+    text-align: center;
+  }
+
+  .MuiTableCell-root,
+  .MuiTypography-h6 {
+    font-size: 14px;
+  }
+
+  .MuiTypography-h6 {
+    margin-top: 10px;
+  }
+
+  .MuiButton-root {
+    margin-top: 30px;
+  }
+}
+
+/* Styles for tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* No specific styles for tablets, you can add them here if needed */
+}
+
+/* Styles for laptops (1024px and up) */
+@media (min-width: 1024px) {
+  /* No specific styles for laptops, you can add them here if needed */
+}

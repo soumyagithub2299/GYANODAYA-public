@@ -1,0 +1,90 @@
+.account-details-container {
+  background: linear-gradient(to bottom, #f9fbe7, #d2ebfb);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.animated-text {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media queries for different screen sizes */
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .account-details-container {
+    padding: 20px;
+  }
+
+  .MuiTypography-h4 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .MuiButton-containedPrimary {
+    margin-top: 30px;
+    width: 50%;
+    font-size: 20px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .blue-text {
+    font-size: 32px;
+    color: blue;
+    margin-top: 35px;
+    margin-bottom: 50px;
+  }
+}
+
+/* Responsive styles for phones (up to 767px) */
+@media (max-width: 767px) {
+  .account-details-container {
+    padding: 10px;
+  }
+  .blue-text {
+    font-size: 30px;
+    color: blue;
+    margin-top: 35px;
+    margin-bottom: 50px;
+  }
+
+  .MuiTableCell-root {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .full-width-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .MuiGrid-item {
+    flex: 1;
+  }
+
+  .MuiButton-containedPrimary {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .MuiTableContainer-root {
+    margin: 0;
+  }
+}
