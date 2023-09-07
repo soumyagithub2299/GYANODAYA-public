@@ -2,7 +2,7 @@
 GYANODAYA - Education E-commerce Single Page Web App
 Welcome to the GYANODAYA React web app repository! GYANODAYA is an educational e-commerce single-page web application built using React, with Material-UI (MUI) for the frontend. It utilizes Azure services such as Azure Function App, Azure Blob Storage, Azure API Management. This project also includes unit testing and integration testing using Jest, error monitoring with Sentry, and detailed API documentation created with Postman.
 
-GitHub Repository: https://github.com/soumyagithub2299/frontend-of-GYANODAYA
+GitHub Repository: https://github.com/soumyagithub2299/GYANODAYA-public
 
 Table of Contents:
 
