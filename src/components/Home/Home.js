@@ -4,17 +4,20 @@ import ServiceCart from "../ServiceCart/ServiceCart";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import logo from "../../images/logo.png";
 import "./Home.css";
 
 const Home = () => {
-
   // Links to GitHub repository and portfolio
-  const githubLink = 'https://github.com/soumyagithub2299/frontend-of-GYANODAYA';
-  const portfolioLink = 'https://soumyagithub2299.github.io/portfolio/';
+  const githubLink = "https://github.com/soumyagithub2299/GYANODAYA-public";
+
+  const githubLinkBackend =
+    "https://github.com/soumyagithub2299/GYANODAYA-backend";
+
+  const portfolioLink = "https://soumyagithub2299.github.io/portfolio/";
 
   // Array of services provided
   const services = [
@@ -69,16 +72,21 @@ const Home = () => {
     <div className="animated-text">
       <div className="home-gradient-background">
         <Container maxWidth="md">
-          <Card style={{ marginTop: "22px", position: "relative" ,  cursor: "auto", }}>
+          <Card
+            style={{ marginTop: "22px", position: "relative", cursor: "auto" }}
+          >
             <CardContent>
-              <Typography variant="h4" style={{ color: "#000080" ,  cursor: "auto",}}>
+              <Typography
+                variant="h4"
+                style={{ color: "#000080", cursor: "auto" }}
+              >
                 What You Will Get Here ?
               </Typography>
 
               <Typography
                 variant="h6"
                 className="typing-text"
-                style={{ color: "blue" ,  cursor: "auto",}}
+                style={{ color: "blue", cursor: "auto" }}
               >
                 Comprehensive e-books ( PDF ) for all subjects.
               </Typography>
@@ -88,11 +96,7 @@ const Home = () => {
                 e-books to help you excel in your studies.
               </Typography>
 
-              <img
-                src={logo}
-                alt="logo"
-                className="logo-inside-bottom-card"
-              />
+              <img src={logo} alt="logo" className="logo-inside-bottom-card" />
             </CardContent>
           </Card>
 
@@ -110,9 +114,10 @@ const Home = () => {
             }}
           >
             ... Explore our extensive range of products and discover a world of
-            possibilities. To see the full spectrum of offerings, kindly visit our{" "}
+            possibilities. To see the full spectrum of offerings, kindly visit
+            our{" "}
             <Link to="/all-products" style={{ textDecoration: "underline" }}>
-              Products 
+              Products
             </Link>{" "}
             page ...
           </Typography>
@@ -141,8 +146,33 @@ const Home = () => {
           ))}
         </Container>
 
-        <Card style={{ marginTop: "22px", position: "relative" , backgroundColor:'lightyellow', cursor: "auto", }}>
+        <Card
+          style={{
+            marginTop: "22px",
+            position: "relative",
+            backgroundColor: "lightyellow",
+            cursor: "auto",
+          }}
+        >
           <CardContent>
+            <Typography variant="h4" style={{ color: "#000080" }}>
+              <Button
+                component={Link}
+                to={portfolioLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  fontSize: "1.2rem",
+                  transition: "transform 0.2s",
+                }}
+                className="button-hover"
+              >
+                👉 Click here to go to my portfolio website 🧑‍💻
+              </Button>
+            </Typography>
+
             <Typography variant="h4" style={{ color: "#000080" }}>
               <Button
                 component={Link}
@@ -150,10 +180,10 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
-                  textDecoration: 'none',
-                  color: 'inherit',
-                  fontSize: '1.2rem', // Increase font size
-                  transition: 'transform 0.2s', // Add transition for hover effect
+                  textDecoration: "none",
+                  color: "inherit",
+                  fontSize: "1.2rem",
+                  transition: "transform 0.2s",
                 }}
                 className="button-hover"
               >
@@ -164,18 +194,38 @@ const Home = () => {
             <Typography variant="h4" style={{ color: "#000080" }}>
               <Button
                 component={Link}
-                to={portfolioLink}
+                to={githubLinkBackend}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
-                  textDecoration: 'none',
-                  color: 'inherit',
-                  fontSize: '1.2rem', // Increase font size
-                  transition: 'transform 0.2s', // Add transition for hover effect
+                  textDecoration: "none",
+                  color: "inherit",
+                  fontSize: "1.2rem",
+                  transition: "transform 0.2s",
                 }}
                 className="button-hover"
               >
-                👉 Click here to go to my portfolio website 🧑‍💻
+                👉 Click here to go to GitHub repository for backend of this
+                project 🔗
+              </Button>
+            </Typography>
+
+            <Typography variant="h4" style={{ color: "#000080" }}>
+              <Button>
+                <a
+                  href="/json/localGyanodaya.postman_collection.json"
+                  download="localGyanodaya.postman_collection.json"
+                  style={{
+                    textDecoration: "none",
+                    color: "#000080",
+                    fontSize: "1.2rem",
+                    transition: "transform 0.2s",
+                  }}
+                  className="button-hover"
+                >
+                  👉 Click here to download the JSON file of my postman
+                  collection for this project 📄
+                </a>
               </Button>
             </Typography>
           </CardContent>
