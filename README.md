@@ -15,7 +15,7 @@ Setting Up the Backend ,
 Setting Up the Frontend ,
 Testing ,
 API Management ,
-Error Monitoring ,
+Deployment,
 License ,
 
 
@@ -156,8 +156,8 @@ Documentation: Automatically generated documentation is available in Azure API M
 
 For detailed instructions on Azure API Management, refer to the Azure API Management documentation.
 
-Error Monitoring
-GYANODAYA uses Sentry for error monitoring and reporting. Sentry helps track and diagnose errors in real-time, ensuring the application runs smoothly.
+Deployment: I use Vercel for project deployment due to its speed, simplicity, and smooth Git integration, which makes deploying web applications and websites easy and efficient.
+
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.# GYANODAYA-public
