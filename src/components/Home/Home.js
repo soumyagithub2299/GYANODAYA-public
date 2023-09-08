@@ -62,6 +62,11 @@ const Home = () => {
         "I utilized GitHub and VS Code for collaborative coding, version control, and efficient development, streamlining our project workflow.",
     },
     {
+      technology: "Vercel",
+      description:
+        "I chose Vercel for my project deployment because it offers a straightforward, fast, and hassle-free way to take my web applications and websites from development to production. Its seamless Git integration and powerful features make the deployment process efficient and reliable, freeing up more of my time for development tasks.",
+    },
+    {
       technology: "Jira",
       description:
         "I employed myself in Jira for this GYANODAYA project management and issue tracking, enhancing organization and collaboration throughout the project lifecycle.",
