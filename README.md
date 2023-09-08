@@ -111,9 +111,7 @@ Clone the frontend repository:
 
 bash
 Copy code
-github link -  https://github.com/soumyagithub2299/ 
-
-.........******......... you can not clone my frontend due to my privacy policy.
+github link - https://github.com/soumyagithub2299/GYANODAYA-public
 
 Navigate to the project directory:
 
