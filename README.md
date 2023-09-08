@@ -91,9 +91,7 @@ Clone the backend repository:
 
 bash
 Copy code
-github link -  https://github.com/soumyagithub2299/    
-
-.........******......... you can not clone my backend due to privacy policy for my Azure Account
+github link - https://github.com/soumyagithub2299/GYANODAYA-backend 
 
 Set up your Azure Function App environment and configure your Azure Blob Storage account.
 
