@@ -4,32 +4,35 @@ body {
 
 /* Styles for phones (up to 767px) */
 @media (max-width: 767px) {
-  .MuiAppBar-root {
-    padding: 8px;
-  }
   .footer-text {
-    font-size: 16px !important;
-  }
-  .MuiTypography-body1 {
     font-size: 10px !important;
   }
-
-  .MuiIconButton-root {
+  .MuiTypography-body1.MuiTypography-body1 {
+    font-size: 7px !important;
+  }
+  .MuiIconButton-root.MuiIconButton-root {
     font-size: 2.5rem !important;
+  }
+
+  .MuiAppBar-root {
+    padding: 4px;
   }
 }
 
 /* Styles for tablets (768px to 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .MuiTypography-body1 {
+  .footer-text {
+    font-size: 25px !important;
+  }
+  .MuiTypography-body1.MuiTypography-body1 {
     font-size: 20px !important;
   }
-
-  .MuiIconButton-root {
-    font-size: 3rem !important; /* Increase button size for tablets */
+  .MuiIconButton-root.MuiIconButton-root {
+    font-size: 3rem !important;
   }
-  .footer-text {
-    font-size: 25px !important; /* Increase font size for mobile */
+
+  .MuiAppBar-root {
+    padding: 16px;
   }
 }
 
